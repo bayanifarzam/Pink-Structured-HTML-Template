@@ -7,6 +7,16 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+.bgwhite{
+    background-color: white;
+}
+
 a{
     text-decoration: none;
 }
@@ -58,8 +68,7 @@ a{
 
 .headcover{
     box-sizing: border-box;
-    padding: 40px;
-    padding-top: 40px;
+
     text-align: center;
     height: 400px;
     background-image: url('../img/bgcover.jpg');
@@ -73,14 +82,25 @@ a{
     margin-right: 0px;
 }
 
+.layer{
+    background-color: black;
+    height: 100%;
+    opacity: 0.6;
+    padding: 40px;
+    padding-top: 50px;
+}
 
-#services{
+
+
+#services,#banner{
     padding: 20px;
 }
+
 
 .section_title{
     text-align: center;
     margin: 30px;
+    margin-top: 3em;
     
 }
 
@@ -88,14 +108,61 @@ a{
 .container{
     display: flex;
     height: 400px;
-    background-color: lightgray;
+    /* background-color: lightgray; */
     padding: 30px;
 }
 
 .service{
-    background-color: rgb(240, 128, 128);
+    /* background-color: rgb(240, 128, 128); */
     flex: 30%;
     border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
+    padding: 40px;
+    margin: 40px;
+    text-align: center;
+}
+
+.service h4{
+    margin-top: 20px;
+}
+
+.service i{
+    font-size: 50px;
+}
+
+.service p{
+    margin-top: 10px;
+}
+
+
+#banner{
+    background-color: #c0c0c061;
+}
+
+.btext h2{
+    margin-top: 100px;
+    
+}
+
+.btext p{
+    margin-top: 20px;
+}
+
+
+.col{
+    /* background-color: skyblue; */
+    flex: 30%;
+    margin: 5px;
+    display: flex;
+}
+
+.subcol{
+flex: 50%;
+}
+
+.subcol img{
+    margin: 10px;
+    width: 90%;
+}
+.subcol p, .subcol h3, .subcol code{
+    padding: 10px;
 }

@@ -24,6 +24,11 @@ a{
 #nav{
     /* padding: 20px; */
     background-color: rgb(240, 128, 128);
+    display: flex;
+    position: fixed;
+    width: 100%;
+   z-index: 10000;
+   margin-bottom: 100px;
 }
 
 
@@ -38,6 +43,7 @@ a{
 
 .nav{
     display: flex;
+    flex: 90%;
 }
 
 
@@ -88,6 +94,7 @@ a{
     opacity: 0.6;
     padding: 40px;
     padding-top: 50px;
+    
 }
 
 
@@ -110,6 +117,7 @@ a{
     height: 400px;
     /* background-color: lightgray; */
     padding: 30px;
+    bottom: 10px;
 }
 
 .service{
@@ -168,6 +176,7 @@ flex: 50%;
 }
 
 #contact{
+   
     background-color: #fa6464;
     display: flex;
     align-items: center;
@@ -212,3 +221,49 @@ flex: 50%;
     float:right;
     cursor: pointer;
 }
+
+
+
+.footer{
+    padding: 40px;
+    background-color: #534646;
+    color: white;
+    text-align: center;
+}
+
+.responsive{
+   height: 100%;
+   width: auto;
+}
+
+.logo{
+    margin-left: 10px;
+    padding: 5px;
+    flex: 10%;
+    height: 60px;
+}
+.bimage, .btext{
+    flex: 50%;
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    .container,.nav{
+        flex-direction: column;
+    }
+
+    .container{
+        height: 100%;
+    }
+
+    #blog{
+        height: 100%;
+    }
+
+    .bimage{
+        width: 100px;
+    }
+
+  }
+
